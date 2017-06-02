@@ -33,5 +33,5 @@ In order to draw a single line on the left and right lane lines, I modified the 
 
 ### 3. Suggest possible improvements to your pipeline
 1. A possible improvement with curves in the road (see 2.1) would be to a fit second order model instead of lines or maybe break the lines into shorter sgements.
-2. To make the final lines more robust, we could also perform some kind of temporal (frame-to-frame) smoothing as we know the lines 
+2. To make the final lines more robust, we could also perform some kind of temporal (frame-to-frame) smoothing as we know the lines are actually not moving so much. On top of that, I believe we could just perform more edge filtering (according to gradient direction for example).
 2. Another possible improvement would be to perform edge detection only inside the masked region to reduce CPU load.
